@@ -1,0 +1,124 @@
+/* Reset Styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-light: #dee5f0;
+  --secondary-color: #415f8c;
+  --secondary-dark: #181b2e;
+  --background-light-primary: #f4f6fa;
+  --onbackground-dark: #000000;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-light);
+  font-family: "Raleway";
+}
+
+.container {
+  width: 351px;
+  height: 448px;
+  background-color: #ffffff;
+  padding: 15px 25px;
+  border-radius: 5px;
+  /* overflow: scroll; */
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-dark);
+}
+.header span {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+/* TextInput */
+.search {
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  background-color: var(--background-light-primary);
+  border: none;
+  font-size: 1rem;
+}
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.icon {
+  padding: 15px;
+  color: var(--secondary-color);
+  min-width: 30px;
+  text-align: center;
+  background-color: var(--background-light-primary);
+}
+/* subtitile */
+.subtitle {
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--onbackground-dark);
+}
+
+/* Conversation */
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.conversation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-top: 8px;
+  color: var(--onbackground-dark);
+  border-radius: 5px;
+}
+.conversation-container:hover {
+  background-color: var(--background-light-primary);
+}
+.profile-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+.details h4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.details p {
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+.check {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+/* .disp {
+  height: 300px;
+  overflow: scroll;
+} */
